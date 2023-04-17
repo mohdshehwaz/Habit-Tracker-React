@@ -1,38 +1,145 @@
 .App {
   text-align: center;
+  height: 100%; 
+  
+}
+.nav{
+  display: flex;
+  height: auto;
+  padding: 10px;
+  color: rgb(104, 91, 91);
+  cursor: pointer;
+}
+#dashboard-id {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#dd5e89 , #f7bb97);
+
+}
+#dashboard-form-id{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+#dashboard-id input {
+  width: 95%;
+  background-color: white;
+  margin: 1.5rem auto;
+  padding: 1rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login_button {
+  display: block;
+  margin: 3rem auto 1rem auto;
+  width: 55%;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  outline: 0;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #4e65f7;
+  color: black;
+  border: 2px solid transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login_button:hover {
+  border: 2px solid #4e65f7;
+  background-color: #000;
+}
+#total-habits{
+  
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+.habit{
+  background-color: aquamarine;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.habit-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.details-link{
+  height: 35px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#dd5e89;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* // details page css */
+
+#details-main{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.sec-div{
+  display: flex;
+  flex-direction: column;
+  
+}
+.cat-div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.dates-info{
+  display: flex;
+ margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.div-date{
+  width: 120px;
+  height: 120px;
+  background-color: aquamarine;
+  border: 1px solid lightgray;
+}
+.delete-btn{
+  border: none;
+  background: aquamarine;
+  color: #dd5e89;
+  
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dates-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
